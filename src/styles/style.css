@@ -73,6 +73,7 @@
 
 .description {
   display: flex;
+  flex-direction: column;
   background-color: var(--color);
 }
 
@@ -80,13 +81,13 @@
   line-height: 20px;
   color: var(--color4);
   margin: 10px;
-  width: 50%;
+  width: 90%;
 }
 
 .description__div {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .dev--projects,
@@ -102,12 +103,12 @@
   margin-top: 15px;
   margin-right: 5px;
   padding: 10px;
-  color: var(--color3);
+  color: var(--color1);
 }
 
 .icon > a {
   text-decoration: none;
-  color: var(--color3);
+  color: var(--color1);
 }
 
 .icon {
@@ -131,13 +132,20 @@
 }
 
 #skills {
-  background-color: var(--color4);
-  padding: 20px 0;
+  background-color: var(--color3);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 30px 0;
 }
 
 .img > img {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 
 .img {
@@ -145,13 +153,13 @@
   justify-content: center;
   align-items: center;
   background-color: var(--color);
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin: 10px;
   border-radius: 8px;
 }
 
-#deferential {
+#diferential {
   background-color: var(--color);
   color: var(--color2);
 }
@@ -171,6 +179,14 @@
 .differentials > img {
   border-radius: 8px;
   margin-right: 15px;
+  width: 50px;
+  height: 50px;
+}
+
+#projects {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  padding: 20px 0;
 }
 
 .projects {
@@ -182,8 +198,10 @@
 }
 
 .projects > div {
-  width: 50%;
+  width: 40%;
   padding: 20px;
+  background-color: var(--color1);
+  margin-right: 10px;
 }
 
 .contacts {
@@ -192,7 +210,7 @@
   height: 200px;
   justify-content: center;
   align-items: center;
-  background-color: var(--color1);
+  background-color: var(--color3);
 }
 
 .contacts__img--div > a > img {
@@ -203,8 +221,153 @@
   opacity: 70%;
 }
 
+.projects > div > img {
+  width: 50px;
+  height: 50px;
+}
+
 .contacts__imgs {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 600px) {
+  .container__nav--a {
+    font-size: 1.25rem;
+  }
+
+  .section__un--div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+  }
+
+  .section__div2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .section__div2 > a {
+    margin: 5px;
+    font-size: 1.125rem;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .description__p {
+    max-width: 60%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+  }
+
+  .description__div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .diferent {
+    display: flex;
+    margin: 50px auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    height: 80px;
+  }
+
+  .container__nav--a {
+    font-size: 1.5625rem;
+  }
+
+  .section__un{
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(../assets/computer-screen-technology-gadget-developer-programming-1165593-pxhere.com.jpg);
+    background-repeat: no-repeat;
+    width: 100%; 
+    max-width: 100vw;
+    height: 400px; 
+  }
+
+  .section__un--div {
+    margin: 20px;
+    font-size: 35px;
+  }
+
+  .section__div2 {
+    margin: 20px;
+  }
+
+  .section__div2 > a{
+    font-size: 25px;
+  }
+
+  .description {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .description__p {
+    font-size: 25px;  
+    line-height: 30px;
+  }
+
+  .dev--projects, .dev--freela {
+    width: 100%;
+    height: 125px;
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .img{
+    width: 120px;
+    height: 120px;
+  }
+
+  .img > img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .differentials{
+    width: 45%;
+    height: 320px;
+    font-size: 1.5625rem;
+    line-height: 2rem;
+  }
+
+  .differentials > img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .projects > div{
+    width: 45%;
+    height: 420px;
+    font-size: 1.5625rem;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    line-height: 2rem;
+  }
+
+  .projects > div > img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .contacts__img--div > a > img{
+    width: 100px; 
+    height: 100px;
+  }
 }
