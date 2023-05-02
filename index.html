@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="referrer" content="no-referrer" />
@@ -29,27 +29,26 @@
     </header>
     <section class="section__un">
       <button class="btn">
-        <strong
+        <a
           class="section__un--a"
           target="_blank"
           href="https://github.com/LaisaCCAndrade?tab=repositories"
-          >GitHub</strong
+          >GitHub</a
         >
         <div id="container-stars">
           <div id="stars"></div>
         </div>
-
         <div id="glow">
           <div class="circle"></div>
           <div class="circle"></div>
         </div>
       </button>
       <button class="btnIn" type="button">
-        <strong
+        <a
           class="section__un--a"
           target="_blank"
           href="https://www.linkedin.com/in/laisa-c-c-andrade/"
-          >In</strong
+          >In</a
         >
         <div id="container-stars">
           <div id="stars"></div>
@@ -74,6 +73,7 @@
     </section>
 
     <main class="main">
+      <dialog id="quemSou"></dialog>
       <!-- <section class="description" id="quemSou">
         <p class="description__p">
           Olá, sou a Laisa Andrade, Sou uma profissional com mais de 04 anos de
@@ -116,7 +116,13 @@
         <h1 class="title">Minhas Skills</h1>
         <div class="content">
           <div class="slides">
-            <input class="input" type="radio" name="slide" id="slide1" checked />
+            <input
+              class="input"
+              type="radio"
+              name="slide"
+              id="slide1"
+              checked
+            />
             <input class="input" type="radio" name="slide" id="slide2" />
             <input class="input" type="radio" name="slide" id="slide3" />
             <input class="input" type="radio" name="slide" id="slide4" />
@@ -146,10 +152,7 @@
               <img src="./src/assets/api.png" alt="API" />
             </div>
             <div class="slide">
-              <img
-                src="./src/assets/styled-components.jpeg"
-                alt="Styled Component"
-              />
+              <img src="./src/assets/styled-components.jpeg" alt="Styled Component" />
             </div>
             <div class="slide">
               <img src="./src/assets/figma.png" alt="Figma" />
@@ -179,22 +182,33 @@
         <h2 class="title">Diferenciais</h2>
         <div class="diferent">
           <div class="differentials">
-            <img src="./src/assets/clean-code.jpeg" alt="Clean Code" />
-            <p>
-              Tenho como minha principal diretriz durante o desenvolvimento a
-              qualidade do código seguindo as melhores práticas do mercado.
-            </p>
+            <img class="differentials-img" src="./src/assets/clean-code.jpeg" alt="Clean Code" />
+            <div>
+              <p>
+                Tenho como minha principal diretriz durante o desenvolvimento a
+                qualidade do código seguindo as melhores práticas do mercado.
+              </p>
+            </div>
           </div>
           <div class="differentials">
-            <img
-              src="./src/assets/metodologia-agil.png"
-              alt="Metodologia Agil"
-            />
-            <p>
-              Utilizo metodologias e planejamentos otimizados que dinamizam o
-              fluxo de produção. Através de feedback e interações constantes,
-              garantindo a agilidade e eficiência do processo.
-            </p>
+            <img src="./src/assets/metodologia-agil.png" alt="Metodologia Agil" />
+            <div>
+              <p>
+                Utilizo metodologias e planejamentos otimizados que dinamizam o
+                fluxo de produção. Através de feedback e interações constantes,
+                garantindo a agilidade e eficiência do processo.
+              </p>
+            </div>
+          </div>
+          <div class="differentials">
+            <img src="./src/assets/metodologia-agil.png" alt="Metodologia Agil" />
+            <div>
+              <p>
+                Utilizo metodologias e planejamentos otimizados que dinamizam o
+                fluxo de produção. Através de feedback e interações constantes,
+                garantindo a agilidade e eficiência do processo.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -202,55 +216,78 @@
         <h2 class="title">Projetos</h2>
         <div class="projects containerr">
           <div class="card">
-            <div class="img">
-            </div>
+            <div class="img"></div>
             <div class="contentt">
               <h2 class="titleProjects">Love Story</h2>
-              <p class="desc">Desenvolvimento do site de uma loja, realizando a renderização dos produtos, criação das páginas home, sobre e catálogo. Sendo uma loja redirecionada a casamentos, contendo vestidos, ternos, acessórios e sapatos. Utilizando as seguintes ferramentas e linguagens: HTML, CSS e JavaScript – 2022</p>
+              <p class="desc">
+                Desenvolvimento do site de uma loja, realizando a renderização
+                dos produtos, criação das páginas home, sobre e catálogo. Sendo
+                uma loja redirecionada a casamentos, contendo vestidos, ternos,
+                acessórios e sapatos. Utilizando as seguintes ferramentas e
+                linguagens: HTML, CSS e JavaScript – 2022
+              </p>
             </div>
             <div class="arrow">
               <span>&#8673;</span>
             </div>
           </div>
           <div class="card">
-            <div class="img2">
-            </div>
+            <div class="img2"></div>
             <div class="contentt">
               <h2 class="titleProjects">Poke Api</h2>
-              <p class="desc">Desenvolvimento de uma landing page, renderizando os pokemons. Sendo possivel a pesquisa o pokemon preferido. Utilizando as seguintes ferramentas e linguagens: HTML, CSS, JavaScript e API – 2022</p>
+              <p class="desc">
+                Desenvolvimento de uma landing page, renderizando os pokemons.
+                Sendo possivel a pesquisa o pokemon preferido. Utilizando as
+                seguintes ferramentas e linguagens: HTML, CSS, JavaScript e API
+                – 2022
+              </p>
             </div>
             <div class="arrow">
               <span>&#8673;</span>
             </div>
           </div>
           <div class="card">
-            <div class="img3">
-            </div>
+            <div class="img3"></div>
             <div class="contentt">
               <h2 class="titleProjects">Rick and Morty</h2>
-              <p class="desc">Desenvolvimento de uma landing page, renderização dos personagens de Rick and Morty. Sendo possivel a pesquisa do personagem preferido. Utilizando as seguintes ferramentas e linguagens: HTML, CSS, JavaScript e API – 2022</p>
+              <p class="desc">
+                Desenvolvimento de uma landing page, renderização dos
+                personagens de Rick and Morty. Sendo possivel a pesquisa do
+                personagem preferido. Utilizando as seguintes ferramentas e
+                linguagens: HTML, CSS, JavaScript e API – 2022
+              </p>
             </div>
             <div class="arrow">
               <span>&#8673;</span>
             </div>
           </div>
           <div class="card">
-            <div class="img4">
-            </div>
+            <div class="img4"></div>
             <div class="contentt">
               <h2 class="titleProjects">Burguer</h2>
-              <p class="desc">Desenvolvimento do site de uma hamburgueria, realizando a renderização dos produtos, criação das páginas de cadastro, login e menu principal. Utilizando as seguintes ferramentas e linguagens: API, JavaScript, TypeScript, React, HTML e Styled Components – 2023</p>
+              <p class="desc">
+                Desenvolvimento do site de uma hamburgueria, realizando a
+                renderização dos produtos, criação das páginas de cadastro,
+                login e menu principal. Utilizando as seguintes ferramentas e
+                linguagens: API, JavaScript, TypeScript, React, HTML e Styled
+                Components – 2023
+              </p>
             </div>
             <div class="arrow">
               <span>&#8673;</span>
             </div>
           </div>
           <div class="card">
-            <div class="img5">
-            </div>
+            <div class="img5"></div>
             <div class="contentt">
               <h2 class="titleProjects">Borscht House</h2>
-              <p class="desc">Desenvolvimento do site de um restaurante, realizando a renderização dos produtos, criação das páginas de cadastro, login e menu principal. Utilizando as seguintes ferramentas e linguagens: API, JavaScript, TypeScript, React, HTML, Styled Components e Axios – 2023</p>
+              <p class="desc">
+                Desenvolvimento do site de um restaurante, realizando a
+                renderização dos produtos, criação das páginas de cadastro,
+                login e menu principal. Utilizando as seguintes ferramentas e
+                linguagens: API, JavaScript, TypeScript, React, HTML, Styled
+                Components e Axios – 2023
+              </p>
             </div>
             <div class="arrow">
               <span>&#8673;</span>
@@ -271,7 +308,7 @@
               target="_blank"
               href="https://api.whatsapp.com/send?phone=5519992763681"
             >
-              <img src="./src/assets/phone.jpeg" alt="Metodologia Agil" />
+              <img src="./src/assets/phone.jpeg" alt="Whatsapp" />
             </a>
           </div>
           <div class="contacts__img--div">
@@ -279,7 +316,7 @@
               target="_blank"
               href="https://www.linkedin.com/in/laisa-c-c-andrade-9760bb131/"
             >
-              <img src="./src/assets/linkedin.jpeg" alt="Metodologia Agil" />
+              <img src="./src/assets/linkedin.jpeg" alt="LinkedIn" />
             </a>
           </div>
           <div class="contacts__img--div">
@@ -287,7 +324,7 @@
               target="_blank"
               href="https://github.com/LaisaCCAndrade?tab=repositories"
             >
-              <img src="./src/assets/git.png" alt="Metodologia Agil" />
+              <img src="./src/assets/git.png" alt="GitHub" />
             </a>
           </div>
         </div>
