@@ -19,21 +19,48 @@
   <body>
     <header class="container">
       <div class="container__nav">
-        <a
-          class="container__nav--a"
-          target="_blank"
-          href="https://github.com/LaisaCCAndrade?tab=repositories"
-          >GitHub</a
-        >
-        <a
-          class="container__nav--a"
-          target="_blank"
-          href="https://www.linkedin.com/in/laisa-c-c-andrade-9760bb131/"
-          >In</a
-        >
+        <div>
+          <a href="#quemSou">Sobre</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projetos</a>
+          <a href="#constacts">Contato</a>
+        </div>
       </div>
     </header>
     <section class="section__un">
+      <button class="btn">
+        <strong
+          class="section__un--a"
+          target="_blank"
+          href="https://github.com/LaisaCCAndrade?tab=repositories"
+          >GitHub</strong
+        >
+        <div id="container-stars">
+          <div id="stars"></div>
+        </div>
+
+        <div id="glow">
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </button>
+      <button class="btnIn" type="button">
+        <strong
+          class="section__un--a"
+          target="_blank"
+          href="https://www.linkedin.com/in/laisa-c-c-andrade/"
+          >In</strong
+        >
+        <div id="container-stars">
+          <div id="stars"></div>
+        </div>
+
+        <div id="glow">
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </button>
+
       <div class="section__un--div">
         <div class="section__photo--name">
           <img
@@ -43,17 +70,11 @@
           />
           <h1 class="section__name">Laisa Andrade</h1>
         </div>
-        <div class="section__div2">
-          <a href="#quemSou">Quem sou</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projetos</a>
-          <a href="#constacts">Entrar em contato</a>
-        </div>
       </div>
     </section>
 
     <main class="main">
-      <section class="description" id="quemSou">
+      <!-- <section class="description" id="quemSou">
         <p class="description__p">
           Olá, sou a Laisa Andrade, Sou uma profissional com mais de 04 anos de
           experiência. Formada em Desenvolvimento Front-end, Desenvolvimento Web
@@ -89,47 +110,71 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section id="skills">
         <h1 class="title">Minhas Skills</h1>
-        <div class="imgs">
-          <div class="img">
-            <img src="./src/assets/html5.jpg" alt="HTML" />
-          </div>
-          <div class="img">
-            <img src="./src/assets/css.jpg" alt="CSS" />
-          </div>
-          <div class="img">
-            <img src="./src/assets/js.jpg" alt="JavaScript" />
-          </div>
-          <div class="img">
-            <img src="./src/assets/react.png" alt="React" />
-          </div>
-          <div class="img">
-            <img src="./src/assets/typescript.png" alt="TypeScript" />
-          </div>
-          <div class="img">
-            <img src="./src/assets/api.png" alt="API" />
-          </div>
-          <div class="img">
-            <img
-              src="./src/assets/styled-components.jpeg"
-              alt="Styled ComponentL"
-            />
-          </div>
-          <div class="img">
-            <img src="./src/assets/figma.png" alt="Figma" />
-          </div>
-          <div class="img">
-            <img src="./src/assets/redux.png" alt="Redux" />
-          </div>
-          <div class="img">
-            <img src="./src/assets/github.png" alt="GitHub" />
+        <div class="content">
+          <div class="slides">
+            <input class="input" type="radio" name="slide" id="slide1" checked />
+            <input class="input" type="radio" name="slide" id="slide2" />
+            <input class="input" type="radio" name="slide" id="slide3" />
+            <input class="input" type="radio" name="slide" id="slide4" />
+            <input class="input" type="radio" name="slide" id="slide5" />
+            <input class="input" type="radio" name="slide" id="slide6" />
+            <input class="input" type="radio" name="slide" id="slide7" />
+            <input class="input" type="radio" name="slide" id="slide8" />
+            <input class="input" type="radio" name="slide" id="slide9" />
+            <input class="input" type="radio" name="slide" id="slide10" />
+
+            <div class="slide s1">
+              <img src="./src/assets/html5.jpg" alt="HTML" />
+            </div>
+            <div class="slide">
+              <img src="./src/assets/css.jpg" alt="CSS" />
+            </div>
+            <div class="slide">
+              <img src="./src/assets/js.jpg" alt="JavaScript" />
+            </div>
+            <div class="slide">
+              <img src="./src/assets/react.png" alt="React" />
+            </div>
+            <div class="slide">
+              <img src="./src/assets/typescript.png" alt="TypeScript" />
+            </div>
+            <div class="slide">
+              <img src="./src/assets/api.png" alt="API" />
+            </div>
+            <div class="slide">
+              <img
+                src="./src/assets/styled-components.jpeg"
+                alt="Styled Component"
+              />
+            </div>
+            <div class="slide">
+              <img src="./src/assets/figma.png" alt="Figma" />
+            </div>
+            <div class="slide">
+              <img src="./src/assets/redux.png" alt="Redux" />
+            </div>
+            <div class="slide">
+              <img src="./src/assets/github.png" alt="GitHub" />
+            </div>
           </div>
         </div>
+        <div class="navigation">
+          <label class="bar" for="slide1"></label>
+          <label class="bar" for="slide2"></label>
+          <label class="bar" for="slide3"></label>
+          <label class="bar" for="slide4"></label>
+          <label class="bar" for="slide5"></label>
+          <label class="bar" for="slide6"></label>
+          <label class="bar" for="slide7"></label>
+          <label class="bar" for="slide8"></label>
+          <label class="bar" for="slide9"></label>
+          <label class="bar" for="slide10"></label>
+        </div>
       </section>
-
       <section id="diferential">
         <h2 class="title">Diferenciais</h2>
         <div class="diferent">
@@ -153,62 +198,66 @@
           </div>
         </div>
       </section>
-
       <section id="projects">
         <h2 class="title">Projetos</h2>
-        <div class="projects">
-          <div>
-            <div>
-              <img src="./src/assets/ProjetoLoveStory.png" alt="Love Story" />
-              <img src="./src/assets/ProjetoLoveStoryy.png" alt="Love Story" />
+        <div class="projects containerr">
+          <div class="card">
+            <div class="img">
             </div>
-            <p>
-              Desenvolvimento do site de uma loja, realizando a renderização dos
-              produtos, criação das páginas home, sobre e catálogo. Sendo uma
-              loja redirecionada a casamentos, contendo vestidos, ternos,
-              acessórios e sapatos. Utilizando as seguintes ferramentas e
-              linguagens: HTML, CSS e JavaScript – 2022
-            </p>
-            <a href="https://love-story-five.vercel.app/">Love Story</a>
+            <div class="contentt">
+              <h2 class="titleProjects">Love Story</h2>
+              <p class="desc">Desenvolvimento do site de uma loja, realizando a renderização dos produtos, criação das páginas home, sobre e catálogo. Sendo uma loja redirecionada a casamentos, contendo vestidos, ternos, acessórios e sapatos. Utilizando as seguintes ferramentas e linguagens: HTML, CSS e JavaScript – 2022</p>
+            </div>
+            <div class="arrow">
+              <span>&#8673;</span>
+            </div>
           </div>
-          <div>
-            <img src="./src/assets/ProjetoPokeApi.png" alt="Poke Api" />
-            <p>
-              Desenvolvimento de uma landing page, renderização dos pokemons.
-              Sendo possivel a pesquisa o pokemon preferido. Utilizando as
-              seguintes ferramentas e linguagens: HTML, CSS, JavaScript e API –
-              2022
-            </p>
-            <a href="https://api-poke-api.vercel.app/">Poke Api</a>
+          <div class="card">
+            <div class="img2">
+            </div>
+            <div class="contentt">
+              <h2 class="titleProjects">Poke Api</h2>
+              <p class="desc">Desenvolvimento de uma landing page, renderizando os pokemons. Sendo possivel a pesquisa o pokemon preferido. Utilizando as seguintes ferramentas e linguagens: HTML, CSS, JavaScript e API – 2022</p>
+            </div>
+            <div class="arrow">
+              <span>&#8673;</span>
+            </div>
           </div>
-          <div>
-            <img src="./src/assets/ProjetoRickAndMorty.png" alt="Rick and Morty" />
-            <p>
-              Desenvolvimento de uma landing page, renderização dos personagens de Rick and Morty.
-              Sendo possivel a pesquisa o personagem preferido. Utilizando as
-              seguintes ferramentas e linguagens: HTML, CSS, JavaScript e API –
-              2022
-            </p>
-            <a href="https://rick-and-morty-theta-olive.vercel.app/">Rick and Morty</a>
+          <div class="card">
+            <div class="img3">
+            </div>
+            <div class="contentt">
+              <h2 class="titleProjects">Rick and Morty</h2>
+              <p class="desc">Desenvolvimento de uma landing page, renderização dos personagens de Rick and Morty. Sendo possivel a pesquisa do personagem preferido. Utilizando as seguintes ferramentas e linguagens: HTML, CSS, JavaScript e API – 2022</p>
+            </div>
+            <div class="arrow">
+              <span>&#8673;</span>
+            </div>
           </div>
-          <div>
-            <img src="./src/assets/ProjetoBurguer.png" alt="Burguer" />
-            <p>
-              Desenvolvimento do site de uma hamburgueria, realizando a renderização dos produtos, criação das páginas de cadastro, login e menu principal. Utilizando as seguintes ferramentas e
-              linguagens: API, JavaScript, TypeScript, React, HTML e Styled Components – 2023
-            </p>
-            <a href="https://burguer-theta.vercel.app/">Burguer</a>
+          <div class="card">
+            <div class="img4">
+            </div>
+            <div class="contentt">
+              <h2 class="titleProjects">Burguer</h2>
+              <p class="desc">Desenvolvimento do site de uma hamburgueria, realizando a renderização dos produtos, criação das páginas de cadastro, login e menu principal. Utilizando as seguintes ferramentas e linguagens: API, JavaScript, TypeScript, React, HTML e Styled Components – 2023</p>
+            </div>
+            <div class="arrow">
+              <span>&#8673;</span>
+            </div>
           </div>
-          <div>
-            <img src="./src/assets/ProjetoBorschtHouse.png" alt="Borscht House" />
-            <p>
-              Desenvolvimento do site de um restaurante, realizando a renderização dos produtos, criação das páginas de cadastro, login e menu principal. Utilizando as seguintes ferramentas e linguagens: API, JavaScript, TypeScript, React, HTML, Styled Components e Axios – 2023
-            </p>
-            <a href="https://borscht-house.vercel.app/">Borscht House</a>
+          <div class="card">
+            <div class="img5">
+            </div>
+            <div class="contentt">
+              <h2 class="titleProjects">Borscht House</h2>
+              <p class="desc">Desenvolvimento do site de um restaurante, realizando a renderização dos produtos, criação das páginas de cadastro, login e menu principal. Utilizando as seguintes ferramentas e linguagens: API, JavaScript, TypeScript, React, HTML, Styled Components e Axios – 2023</p>
+            </div>
+            <div class="arrow">
+              <span>&#8673;</span>
+            </div>
           </div>
         </div>
       </section>
-
       <section class="contacts">
         <h2 class="title" id="constacts">Contato</h2>
         <div class="contacts__imgs">
@@ -244,6 +293,6 @@
         </div>
       </section>
     </main>
-    <script src=""></script>
+    <script src="./src/scripts/script.js"></script>
   </body>
 </html>
