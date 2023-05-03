@@ -20,7 +20,7 @@
     <header class="container">
       <div class="container__nav">
         <div>
-          <a href="#quemSou">Sobre</a>
+          <a id="openDialog" href="#quemSou">Sobre</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projetos</a>
           <a href="#constacts">Contato</a>
@@ -73,8 +73,9 @@
     </section>
 
     <main class="main">
-      <dialog id="quemSou"></dialog>
-      <!-- <section class="description" id="quemSou">
+      <dialog open id="quemSou">
+        <button id="closeDialog">X</button>
+        <section class="description" id="quemSou">
         <p class="description__p">
           Olá, sou a Laisa Andrade, Sou uma profissional com mais de 04 anos de
           experiência. Formada em Desenvolvimento Front-end, Desenvolvimento Web
@@ -110,7 +111,8 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
+      </dialog>
 
       <section id="skills">
         <h1 class="title">Minhas Skills</h1>

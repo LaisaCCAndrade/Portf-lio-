@@ -8,3 +8,17 @@ setInterval(function () {
     count = 1;
   }
 }, 3000);
+
+(function () {
+  const openDialog = document.getElementById("openDialog");
+  const closeDialog = document.getElementById("closeDialog");
+  const dialog = document.getElementById("quemSou");
+
+  openDialog.addEventListener("click", function () {
+    dialog.showModal();
+  });
+
+  closeDialog.addEventListener("click", function () {
+    dialog.close();
+  });
+})();
