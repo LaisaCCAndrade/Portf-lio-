@@ -652,6 +652,7 @@ dialog{
   height: 500px;
   background-color: #f02eaa66;
   border-radius: 20px;
+  z-index: 1;
 }
 
 .dev--projects,
